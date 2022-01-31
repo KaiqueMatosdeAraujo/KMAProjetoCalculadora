@@ -61,7 +61,8 @@ public class CalculadoraServlet extends HttpServlet {
 				if("1".equals(teste)) {
 					
 		            resultado = c.somar();
-				
+		            request.setAttribute("valorPrimeiro", numero1);
+		            request.setAttribute("valorSegundo", numero2);
 					request.setAttribute("resultadoconta", resultado);
 					request.getRequestDispatcher("/").forward(request,response);
 				
@@ -70,6 +71,8 @@ public class CalculadoraServlet extends HttpServlet {
 				}else if("2".equals(teste)){
 					resultado = c.subtrair();
 					
+					request.setAttribute("valorPrimeiro", numero1);
+			        request.setAttribute("valorSegundo", numero2);
 		            request.setAttribute("resultadoconta", resultado);
 					request.getRequestDispatcher("/").forward(request,response);
 					
@@ -79,6 +82,8 @@ public class CalculadoraServlet extends HttpServlet {
 				else if("3".equals(teste)){
 					resultado = c.multiplicar();
 					
+					request.setAttribute("valorPrimeiro", numero1);
+			        request.setAttribute("valorSegundo", numero2);
 		            request.setAttribute("resultadoconta", resultado);
 					request.getRequestDispatcher("/").forward(request,response);
 		
@@ -89,7 +94,8 @@ public class CalculadoraServlet extends HttpServlet {
 					
 					resultado = c.dividir();
 					
-					 
+				    request.setAttribute("valorPrimeiro", numero1);
+			        request.setAttribute("valorSegundo", numero2);
 		            request.setAttribute("resultadoconta",resultado);
 					request.getRequestDispatcher("/").forward(request,response);
 					

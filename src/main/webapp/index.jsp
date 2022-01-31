@@ -82,6 +82,10 @@
   </form>
   
     <div class="container bg-dark" style="color: White;font-size: 125%;
+    text-align: center;"> 1º Valor = ${requestScope.valorPrimeiro}</div>
+    <div class="container bg-dark" style="color: White;font-size: 125%;
+    text-align: center;"> 2º Valor = ${requestScope.valorSegundo}</div>
+    <div class="container bg-dark" style="color: White;font-size: 125%;
     text-align: center;"> O resultado é = ${requestScope.resultadoconta}</div>
       
    </div>
