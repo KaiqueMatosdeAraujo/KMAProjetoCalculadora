@@ -54,11 +54,49 @@ public class CalculadoraServlet extends HttpServlet {
 					numero1 = Integer.parseInt(var1);
 					numero2 = Integer.parseInt(var2);
 					Calcular c = new Calcular(numero1,numero2);
-				   
-					resultado = c.somar();
+					
+				String	teste = request.getParameter("calc");
+					
+			    //Adição
+				if("1".equals(teste)) {
+					
+		            resultado = c.somar();
 				
-				request.setAttribute("resultadoconta", resultado);
-				request.getRequestDispatcher("/").forward(request,response);
+					request.setAttribute("resultadoconta", resultado);
+					request.getRequestDispatcher("/").forward(request,response);
+				
+					
+			    //Subtração
+				}else if("2".equals(teste)){
+					resultado = c.subtrair();
+					
+		            request.setAttribute("resultadoconta", resultado);
+					request.getRequestDispatcher("/").forward(request,response);
+					
+					
+				}
+				//Multiplicação
+				else if("3".equals(teste)){
+					resultado = c.multiplicar();
+					
+		            request.setAttribute("resultadoconta", resultado);
+					request.getRequestDispatcher("/").forward(request,response);
+		
+				}
+				
+				//Divisão
+				else{
+					
+					resultado = c.dividir();
+					
+					 
+		            request.setAttribute("resultadoconta",resultado);
+					request.getRequestDispatcher("/").forward(request,response);
+					
+					
+				}
+				
+				
 				
 				
 				}else{

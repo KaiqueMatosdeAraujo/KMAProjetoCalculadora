@@ -28,8 +28,38 @@
          
         </div>
                 
+        <h4 style="text-align: center;font-size: 16px;">  Escolha o tipo da operação a ser feita. </h4>
+        
+         <div class ="row" style="justify-content: space-evenly;">
      
-       
+   <div class="form-check col-2">
+  <input class="form-check-input" type="radio" name="calc" id="flexRadioDefault1" value="1"  checked>
+  <label class="form-check-label" for="flexRadioDefault1">
+    Adição
+  </label>
+</div>
+<div class="form-check col-2">
+  <input class="form-check-input" type="radio" name="calc" id="flexRadioDefault2" value="2" >
+  <label class="form-check-label" for="flexRadioDefault2" >
+   Subtração
+  </label>
+</div>
+<div class="form-check col-2">
+  <input class="form-check-input" type="radio" name="calc" id="flexRadioDefault2" value="3" >
+  <label class="form-check-label" for="flexRadioDefault2">
+    Multiplicação
+  </label>
+</div>
+<div class="form-check col-2">
+  <input class="form-check-input" type="radio" name="calc" id="flexRadioDefault2" value="4" >
+  <label class="form-check-label" for="flexRadioDefault2">
+    Divisão
+  </label>
+</div>
+</div> 
+        
+        
+        
         
         
         <div class="mb-3 row "style="margin-top:10px;">
